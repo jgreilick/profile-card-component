@@ -38,8 +38,6 @@ html {
     grid-template-rows: 140px;
     grid-auto-columns: 350px;
     text-align: center;
-
-    margin-bottom: 3.7rem;
 }
 
 .profile-header {
