@@ -12,8 +12,9 @@
     box-sizing: border-box;
 }
 
-body {
+html {
     font-family: 'Kumbh Sans', sans-serif;
+    font-size: 18px;
     font-weight: 400;
 }
 
@@ -37,6 +38,8 @@ body {
     grid-template-rows: 140px;
     grid-auto-columns: 350px;
     text-align: center;
+
+    margin-bottom: 3.7rem;
 }
 
 .profile-header {
@@ -53,16 +56,15 @@ body {
 
 .profile-image > img {
     border-radius: 50%;
-    border: white solid 0.4rem;
+    border: white solid 0.3rem;
 }
 
 .profile-body {
-    padding: 4.75rem 0 1.5rem 0;
+    padding: 4.2rem 0 1.4rem 0;
 }
 
 .profile-age {
     color: var(--color-dark-grayish-blue);
-    font-size: 18px;
     font-weight: 400;
     padding-left: 0.4rem;
 }
@@ -71,30 +73,29 @@ body {
     color: var(--color-dark-grayish-blue);
     font-size: 14px;
     font-weight: 400;
-    padding-top: 0.75rem;
+    padding-top: 0.6rem;
 }
 
 .profile-name {
     color: var(--color-very-dark-desaturated-blue);
-    font-size: 18px;
+    font-size: inherit;
 }
 
 .profile-footer {
     border-top: 1px dotted var(--color-dark-gray);
     display: grid;
     place-content: center;
-    padding: 1.4rem;
+    padding: 1.25rem;
 }
 
 .profile-stats {
     table-layout: fixed;
-    width: 19rem;
-    padding: 0.25rem;
+    width: 16.5rem;
+    padding-top: 0.25rem;
 }
 
 .profile-stat-values{
     color: var(--color-very-dark-desaturated-blue);
-    font-size: 18px;
     font-weight: 700;
 }
 
@@ -103,4 +104,8 @@ body {
     font-size: 10px;
     font-weight: 400;
     letter-spacing: 0.1rem;
+}
+
+.profile-stat-categories > td {
+    padding-top: 0.25rem;
 }
