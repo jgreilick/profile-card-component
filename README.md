@@ -40,7 +40,9 @@ This is a solution to the [Profile card component challenge on Frontend Mentor](
 
 ### What I learned
 
-I gained a deeper understanding of the CSS border property.  I spent a lot of time working to create the blended background that was properly responsive.
+I gained a deeper understanding of the CSS background property.  I spent significant time playing with many different background properties trying to achieve
+a responsive background that fit both the mobile and desktop design without the use of media queries.  It was a valuable exercise.  I didn't achieve the perfection
+I was looking for, but I feel the end result was satisfactory.
 
 ### Continued development
 
