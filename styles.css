@@ -1,0 +1,106 @@
+:root {
+    --color-dark-cyan: hsl(185, 75%, 39%);
+    --color-very-dark-desaturated-blue: hsl(229, 23%, 23%);
+    --color-dark-grayish-blue: hsl(227, 10%, 46%);
+    --color-dark-gray: hsl(0, 0%, 59%);
+    --color-shadow: hsla(0, 0%, 0%, 0.2);
+}
+
+*, ::before, ::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Kumbh Sans', sans-serif;
+    font-weight: 400;
+}
+
+.container {
+    background: 
+        url(./images/bg-pattern-top.svg) right 50vw bottom 42vh no-repeat, 
+        url(./images/bg-pattern-bottom.svg) left 48vw top 52vh no-repeat,
+        var(--color-dark-cyan);
+    display: grid;
+    place-content: center;
+    min-height: 100vh;
+    min-width: 100vw;
+}
+
+.profile-card {
+    background-color: white;
+    border-radius: 1rem;
+    box-shadow: 0 20px 70px var(--color-shadow);
+    overflow: hidden;
+    display: grid;
+    grid-template-rows: 140px;
+    grid-auto-columns: 350px;
+    text-align: center;
+}
+
+.profile-header {
+    background-image: url(./images/bg-pattern-card.svg);
+    display: grid;
+    position: relative;
+}
+
+.profile-image {
+    position: absolute;
+    justify-self: center;
+    top: 62%;
+}
+
+.profile-image > img {
+    border-radius: 50%;
+    border: white solid 0.4rem;
+}
+
+.profile-body {
+    padding: 4.75rem 0 1.5rem 0;
+}
+
+.profile-age {
+    color: var(--color-dark-grayish-blue);
+    font-size: 18px;
+    font-weight: 400;
+    padding-left: 0.4rem;
+}
+
+.profile-city {
+    color: var(--color-dark-grayish-blue);
+    font-size: 14px;
+    font-weight: 400;
+    padding-top: 0.75rem;
+}
+
+.profile-name {
+    color: var(--color-very-dark-desaturated-blue);
+    font-size: 18px;
+}
+
+.profile-footer {
+    border-top: 1px dotted var(--color-dark-gray);
+    display: grid;
+    place-content: center;
+    padding: 1.4rem;
+}
+
+.profile-stats {
+    table-layout: fixed;
+    width: 19rem;
+    padding: 0.25rem;
+}
+
+.profile-stat-values{
+    color: var(--color-very-dark-desaturated-blue);
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.profile-stat-categories {
+    color: var(--color-dark-gray);
+    font-size: 10px;
+    font-weight: 400;
+    letter-spacing: 0.1rem;
+}
